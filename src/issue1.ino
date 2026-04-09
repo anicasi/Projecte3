@@ -1,5 +1,3 @@
-CONNEXIÓ WIFI
-
 #include <WiFi.h>
 const char* ssid = "ProjectesSMX";
 const char* password = "Hola1234";
