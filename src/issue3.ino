@@ -26,11 +26,10 @@ void loop() {
 server.handleClient();
 }
 void enviarPaginaPrincipal() {
-  server.send(String html = "<html><head><meta charset='UTF-8'>";
+String html = "<html><head><meta charset='UTF-8'>";
 html += "<style>body{font-family:sans-serif; text-align:center;} .card{padding:20px; color:white; display:inline-block; margin:10px; border-radius:10px;}</style>";
 html += "</head><body><h1>Monitor CPD</h1>";
 html += "<div class='card' style='background:gray;'><h3>Temp</h3><p>-- °C</p></div>";
 html += "</body></html>";
 server.send(200, "text/html", html);
-);
 }
