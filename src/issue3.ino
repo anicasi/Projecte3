@@ -1,6 +1,7 @@
 #include <WiFi.h>
 const char* ssid = "ProjectesSMX";
 const char* password = "Hola1234";
+
 #include <WebServer.h>
 WebServer server(80);
 
@@ -17,8 +18,8 @@ while (WiFi.status() != WL_CONNECTED) {
 Serial.println("\n Connectat!");
 Serial.print("IP: ");
 Serial.println(WiFi.localIP());
-server.on("/", enviarPaginaPrincipal);
 server.begin();
+server.on("/", enviarPaginaPrincipal);
 }
 
 void loop() {
